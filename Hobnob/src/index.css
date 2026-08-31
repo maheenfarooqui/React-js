@@ -1,0 +1,182 @@
+/* ================= ROOT COLORS ================= */
+
+:root {
+  --primary-color: #042928;
+  --secondary-color: #fcb416;
+  --white: #ffffff;
+  --gray: #f3f3f3;
+  --text-gray: #d9d9d9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  width: 100%;
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  min-height: 75px;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ================= LOGO ================= */
+
+.navbar-logo {
+  color: var(--white);
+  text-decoration: none;
+
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  white-space: nowrap;
+
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: var(--secondary-color);
+}
+
+/* ================= NAVIGATION LINKS ================= */
+
+.navbar-links {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+}
+
+.navbar-links a {
+  color: var(--white);
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* ================= CART ================= */
+
+.cart-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+  text-decoration: none;
+
+  font-size: 22px;
+
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+/* ================= HERO SECTION ================= */
+.hero {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image {
+  width: 100%;
+  
+  
+} /* ================= SEARCH SECTION ================= */
+.search-section {
+  width: 100%;
+  background-color: var(--white);
+  padding: 30px 20px;
+}
+.search-container {
+  max-width: 750px;
+  height: 52px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  background-color: var(--white);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.search-container input {
+  flex: 1;
+  height: 100%;
+  padding: 0 18px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: var(--primary-color);
+  background-color: transparent;
+}
+.search-container input::placeholder {
+  color: #999;
+}
+.search-btn {
+  width: 58px;
+  height: 100%;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.search-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+} /* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 380px;
+  }
+  .search-section {
+    padding: 20px 15px;
+  }
+  .search-container {
+    height: 48px;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    height: 280px;
+  }
+}
