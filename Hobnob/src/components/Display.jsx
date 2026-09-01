@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import Search from "./Search";
+import PopularItem from "./PopularItem";
+import DisplayBanner from "./DisplayBanner";
 
 const Display = () => {
   return (
-    <div>display</div>
-  )
-}
+    <>
+      <Search />
+      <PopularItem />
+      <DisplayBanner />
+      <DisplayBanner />
+      <DisplayBanner />
+      <DisplayBanner />
+    </>
+  );
+};
 
-export default Display
+export default Display;
