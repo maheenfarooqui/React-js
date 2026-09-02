@@ -9,9 +9,6 @@ const Display = () => {
       <Search />
       <PopularItem />
       <DisplayBanner />
-      <DisplayBanner />
-      <DisplayBanner />
-      <DisplayBanner />
     </>
   );
 };
