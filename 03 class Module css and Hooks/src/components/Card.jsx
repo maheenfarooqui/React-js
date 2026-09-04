@@ -17,7 +17,7 @@ const [salary, setAnother] = useState(1000)
     <>
       <h1>{first}</h1>
       <h1>{salary}</h1>
-      <button onClick={() =>{ setfirst("Hareem") , setAnother(200000)}}>Click</button>
+      <button onClick={() =>{ setfirst("Hareem") ; setAnother(200000)}}>Click</button>
     </>
   );
 };
